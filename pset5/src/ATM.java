@@ -120,6 +120,7 @@ public class ATM {
 							System.out.println("Please enter PIN");
 							int pinA = in.nextInt();
 							if(pinA == account.getUser().getPIN()) {
+								System.out.println("Please enter new PIN");
 								int newPin = in.nextInt();
 								account.getUser().setPIN(newPin);
 								System.out.println("Choose another option now");
